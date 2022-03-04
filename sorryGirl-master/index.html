@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="shortcut icon" href="assets/coding.png" type="image/x-icon">
+    <title>Sorry Girl</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|VT323" rel="stylesheet">
+    <script>document.documentElement.className = 'js';</script>
+</head>
+
+<body class="demo-11">
+    <!-- OST AUDIO -->
+    <audio id="ost" loop autoplay>
+        <source id="ost-src" src="assets/ost.mp3" type="audio/mp3">
+    </audio>
+    <!-- OST AUDIO -->
+    <div id="connecting-dots" class="connecting-dots">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="search search--open">
+        <div class="terminal">
+            <p class="terminal__line">
+                Hello! : <span class="green">My Girl :)</span>
+            </p>
+            <p class="terminal__line"> Giận lắm đúng không:<span class="country green">Rất giận</span>?</p>
+            <p class="terminal__line">Hãy thử 1 chút nhẹ nhàng nhé</p>
+            <p> Loading Assets .... Click vào #Sorry Or #Message </p>
+
+            <p class="terminal__line"><a id="sorry.gif" href="#">#Sorry</a></p>
+            <p class="terminal__line"><a id="message" href="#">#Message</a></p>
+        </div>
+        <form class="search__form" action="">
+            <input name="search" id="search__input" autocomplete="off" class="search__input" placeholder="Press enter"
+                autocorrect="off" autocapitalize="off" spellcheck="false">
+            </input>
+        </form>
+            <p><a href="https://www.facebook.com/profile.php?id=100030624693485" target="_blank">
+            <button>Nút này nè</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+    
+    <script src="public/script.js"></script>
+    <script>
+        let audio = document.getElementById('ost')
+        audio.volumen = .8
+        audio.playbackRate = 1.05
+
+        document.addEventListener('click', async e => {
+            await audio.play()
+        })
+    </script>
+</body>
